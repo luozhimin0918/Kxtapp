@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/id_item_btn"
+        android:layout_width="@dimen/sc_delet_w"
+        android:layout_height="@dimen/sc_delet_h"
+        android:background="#f55757"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:singleLine="true"
+        android:text="删除"
+        android:textSize="14sp"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

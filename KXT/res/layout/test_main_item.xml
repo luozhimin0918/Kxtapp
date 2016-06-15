@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周三"
+        android:textColor="?attr/rl_top_scroll_color"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="15"
+        android:textColor="?attr/rl_top_scroll_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="一月"
+        android:textColor="?attr/rl_top_scroll_color"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/hq_self_img"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>

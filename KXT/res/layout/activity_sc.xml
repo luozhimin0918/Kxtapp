@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_favorite_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/sc_unsc" />
+
+    <com.jyh.kxt.customtool.HXListView
+        android:id="@+id/sc_ls_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#999999"
+        android:dividerHeight="1px" >
+    </com.jyh.kxt.customtool.HXListView>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/frag_sc_btm" />
+
+</LinearLayout>

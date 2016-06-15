@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/linear_hq_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/hq_ls_view"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" >
+
+                <GridView
+                    android:id="@+id/gridview_hq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:listSelector="@null"
+                    android:numColumns="3" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listLinear"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="?attr/hq_ls_view"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="名称"
+                            android:textColor="#999999"
+                            android:textSize="16sp" />
+
+                        <com.jyh.kxt.customtool.CHScrollView
+                            android:id="@+id/item_scroll_title"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="?attr/hq_ls_view"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="最新价"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="涨跌幅"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="100dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="涨跌"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="开盘价"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="最高"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="最低"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="昨收"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="110dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="更新时间"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </com.jyh.kxt.customtool.CHScrollView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:minHeight="25dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_left_no"
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="110dp"
+                            android:background="@drawable/yj_left_not_glide"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/iv_left_ok"
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="110dp"
+                            android:background="@drawable/yj_left_glide"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_right_no"
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/yj_right_not_glide"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_right_ok"
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/yj_right_glide"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <com.jyh.kxt.customtool.MyListView
+                    android:id="@+id/scroll_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="?attr/zx_list_cl"
+                    android:divider="#DDDDDD"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </com.jyh.kxt.customtool.MyListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.jyh.kxt.customtool.SelfLinearLayout
+            android:id="@+id/relative_hq_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </com.jyh.kxt.customtool.SelfLinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

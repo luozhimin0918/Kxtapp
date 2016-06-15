@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/sc_grid_item_img"
+                android:layout_width="173dp"
+                android:layout_height="97dp" />
+
+            <CheckBox
+                android:id="@+id/sc_grid_check"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <CheckBox
+                android:id="@+id/sc_grid_delete"
+                style="@style/CustomDeleteboxTheme"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1px"
+            android:background="?attr/flash_blow_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sc_pl_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="精心西安市你先按"
+                android:textColor="#666666"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/sc_pl_rq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="9999"
+                android:textColor="#999999"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

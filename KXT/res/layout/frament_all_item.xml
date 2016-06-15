@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/yw_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yw_bbb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yw_bbb_h"
+        android:layout_margin="8dp"
+        android:background="@drawable/yw_linear_selector"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_frag_jwls"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            fresco:failureImage="@drawable/empty_photo"
+            fresco:placeholderImage="@drawable/empty_photo"
+            fresco:placeholderImageScaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_frag_jwls_title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="欧盟欲与中国争夺在拉美的影响力"
+                android:textColor="?attr/dp_tv"
+                android:textSize="@dimen/textSize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_frag_jwls_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="2015-6-19 19:11"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/textSize_b" />
+
+                <LinearLayout
+                    android:id="@+id/tag_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

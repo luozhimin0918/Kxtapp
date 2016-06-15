@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?attr/flash_bg"
+    >
+
+    <include
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        layout="@layout/item_sp_gridview2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/item_sp_gridview" />
+
+        <include
+            android:id="@+id/layout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            layout="@layout/item_sp_gridview" />
+    </LinearLayout>
+
+</LinearLayout>

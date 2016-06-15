@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_falsh_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+
+        <ProgressBar
+            android:id="@+id/pro_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_bg" />
+
+        <TextView
+            android:id="@+id/show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_bar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:text="数据加载中..." />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatview_reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/flash_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="数据加载失败,点击重刷新" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/flash_bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?attr/flash_bg" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/refreshable_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:smoothScrollbar="true" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <RelativeLayout
+                android:id="@+id/main_rl_listview_to_top_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginRight="5dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="10dip"
+                    android:src="@drawable/kxt_to_top_arrow" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

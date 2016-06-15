@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ActionBar">
+        <attr name="title" format="string" localization="suggested" />
+    </declare-styleable>
+    <declare-styleable name="board_column">
+        <attr name="column" format="integer" localization="suggested" />
+    </declare-styleable>
+    <declare-styleable name="PowerImageView">
+        <attr name="auto_play" format="boolean"></attr>
+    </declare-styleable>
+    <attr name="flash_blow" format="reference|color" />
+    <attr name="flash_blow_bg" format="reference|color" />
+    <attr name="sp_listview" format="reference|color" />
+    <attr name="flash_bg" format="reference|color" />
+    <attr name="flash_tv" format="reference|color" />
+    <attr name="rl_tv" format="reference|color" />
+    <attr name="kxtcj_logo" format="reference|color" />
+    <attr name="flash_top" format="reference|color" />
+    <attr name="yw_bg" format="reference|color" />
+    <attr name="line_color" format="reference|color" />
+    <attr name="line_btm_color" format="reference|color" />
+    <attr name="color_image" format="reference|color" />
+    <attr name="self_bg" format="reference|color" />
+    <attr name="tk_bg" format="reference|color" />
+    <attr name="img_btn" format="reference|color" />
+    <attr name="hq_btn" format="reference|color" />
+    <attr name="dp_btn" format="reference|color" />
+    <attr name="rl_img" format="reference|color" />
+    <attr name="dp_tv" format="reference|color" />
+    <attr name="sc_top" format="reference|color" />
+    <attr name="hq_top" format="reference|color" />
+    <attr name="hq_tv" format="reference|color" />
+    <attr name="hq_gird_bg" format="reference|color" />
+    <attr name="hq_tv_bg" format="reference|color" />
+    <attr name="hq_ls_view" format="reference|color" />
+    <attr name="zx_view" format="reference|color" />
+    <attr name="zx_list_cl" format="reference|color" />
+    <attr name="zx_bg" format="reference|color" />
+    <attr name="zx_main" format="reference|color" />
+    <attr name="sp_title" format="reference|color" />
+    <attr name="bottom_button_0" format="reference|color" />
+    <attr name="bottom_button_1" format="reference|color" />
+    <attr name="bottom_button_2" format="reference|color" />
+    <attr name="bottom_button_3" format="reference|color" />
+    <attr name="bottom_button_4" format="reference|color" />
+    <attr name="bottom_linear_color" format="reference|color" />
+    <attr name="rl_top_scroll_color" format="reference|color" />
+    <attr name="rl_img_publishe" format="reference|color" />
+    <attr name="rl_img_calendar" format="reference|color" />
+
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <attr name="colors" format="color|reference" />
+        <attr name="texts" format="string|reference" />
+        <attr name="android:textSize" />
+        <attr name="direction" format="enum">
+            <enum name="horizon" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="gaps" format="dimension|reference" />
+        <attr name="horizonGap" format="dimension|reference" />
+        <attr name="verticalGap" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>

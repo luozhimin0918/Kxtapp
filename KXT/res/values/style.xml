@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认风格 -->
+    <style name="BrowserThemeDefault" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="flash_blow">#edf9ff</item>
+        <item name="flash_blow_bg">#ffffff</item>
+        <item name="flash_bg">#ffffff</item>
+        <item name="flash_tv">#666666</item>
+        <item name="hq_tv">#1677e0</item>
+        <item name="sp_listview">#ebebeb</item>
+        <item name="rl_tv">#ffffff</item>
+        <item name="flash_top">#1677e0</item>
+        <!-- <item name="flash_top_image_cm">@drawable/comment</item> -->
+        <item name="yw_bg">#fafafa</item>
+        <item name="line_color">#e5e5e5</item>
+        <item name="line_btm_color">#e5e5e5</item>
+        <item name="self_bg">#f0f0f0</item>
+        <item name="color_image">@drawable/self</item>
+        <item name="tk_bg">#f5f5f5</item>
+        <item name="dp_tv">#000000</item>
+        <item name="hq_top">#f4f4f4</item>
+        <item name="hq_gird_bg">#ffffff</item>
+        <item name="hq_tv_bg">#F2F2F2</item>
+        <item name="hq_ls_view">#F2F2F2</item>
+        <item name="zx_list_cl">#ffffff</item>
+        <item name="zx_bg">#ffffff</item>
+        <item name="zx_view">#ffffff</item>
+        <item name="img_btn">@drawable/jw_more</item>
+        <item name="hq_btn">@drawable/hq_more</item>
+        <item name="dp_btn">@drawable/dp_more</item>
+        <item name="rl_img">@drawable/data_main</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select</item>
+        <item name="sp_title">#f4f4f4</item>
+        <item name="bottom_button_0">@drawable/skin_tabbar_icon_flash_select</item>
+        <item name="bottom_button_1">@drawable/skin_tabbar_icon_jw_select</item>
+        <item name="bottom_button_2">@drawable/skin_tabbar_icon_hq_select</item>
+        <item name="bottom_button_3">@drawable/skin_tabbar_icon_data_select</item>
+        <item name="bottom_button_4">@drawable/skin_tabbar_icon_self_select</item>
+        <item name="bottom_linear_color">@drawable/botton_linear_selector</item>
+        <item name="rl_top_scroll_color">@drawable/rl_top_scroll_seletor</item>
+        <item name="rl_img_publishe">@drawable/cjrl_published</item>
+        <item name="rl_img_calendar">@drawable/cjrl_calendar</item>
+    </style>
+
+    <!-- 夜间模式 -->
+    <style name="BrowserThemeNight" parent="@android:style/android:Theme.Light">
+        <item name="zx_view">#021e3c</item>
+        <item name="flash_blow">#04274c</item>
+        <item name="flash_blow_bg">#04274c</item>
+        <item name="sp_listview">#04274c</item>
+        <item name="hq_tv_bg">#000000</item>
+        <item name="hq_ls_view">#0d0d0d</item>
+        <item name="tk_bg">#031e3c</item>
+        <item name="zx_list_cl">#04274c</item>
+        <item name="rl_tv">#7B7B7B</item>
+        <item name="dp_tv">#999999</item>
+        <item name="zx_bg">#031e3c</item>
+        <item name="flash_bg">#031e3c</item>
+        <item name="flash_tv">#999999</item>
+        <item name="hq_gird_bg">#003e80</item>
+        <item name="hq_tv">#999999</item>
+        <item name="self_bg">#031e3c</item>
+        <item name="flash_top">#04274c</item>
+        <item name="hq_top">#043465</item>
+        <!-- <item name="flash_top_image_cm">@drawable/neight_dp</item> -->
+        <item name="yw_bg">#031e3c</item>
+        <item name="line_color">#666666</item>
+        <item name="line_btm_color">#666666</item>
+        <item name="color_image">@drawable/self_bg</item>
+        <item name="img_btn">@drawable/neight_add</item>
+        <item name="hq_btn">@drawable/neight_add</item>
+        <item name="dp_btn">@drawable/neight_dpadd</item>
+        <item name="rl_img">@drawable/data_center</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo_yj</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select_night</item>
+        <item name="sp_title">#043465</item>
+        <item name="bottom_button_0">@drawable/skin_tabbar_icon_flash_select</item>
+        <item name="bottom_button_1">@drawable/skin_tabbar_icon_jw_select</item>
+        <item name="bottom_button_2">@drawable/skin_tabbar_icon_hq_select</item>
+        <item name="bottom_button_3">@drawable/skin_tabbar_icon_data_select</item>
+        <item name="bottom_button_4">@drawable/skin_tabbar_icon_self_select</item>
+        <item name="bottom_linear_color">@drawable/botton_linear_selector_night</item>
+        <item name="rl_top_scroll_color">@drawable/rl_top_scroll_seletor_night</item>
+        <item name="rl_img_publishe">@drawable/cjrl_published_night</item>
+        <item name="rl_img_calendar">@drawable/cjrl_calendar_night</item>
+    </style>
+
+    <style name="CustomDeleteboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@anim/checkbox_style</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@anim/checkbox_player_style</item>
+    </style>
+
+    <style name="CustomGridCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@anim/gridcheckbox_style</item>
+    </style>
+
+    <style name="popwindow_register_animation">
+        <item name="android:windowEnterAnimation">@anim/popwindwo_register_animation_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindwo_register_animation_out</item>
+    </style>
+
+    <!-- 春节样式 -->
+    <style name="BrowserThemeNew" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="flash_blow">#edf9ff</item>
+        <item name="flash_blow_bg">#ffffff</item>
+        <item name="flash_bg">#ffffff</item>
+        <item name="flash_tv">#666666</item>
+        <item name="hq_tv">#116bcc</item>
+        <item name="sp_listview">#ebebeb</item>
+        <item name="rl_tv">#ffffff</item>
+        <item name="flash_top">#116bcc</item>
+        <!-- <item name="flash_top_image_cm">@drawable/comment</item> -->
+        <item name="yw_bg">#fafafa</item>
+        <item name="line_color">#e5e5e5</item>
+        <item name="line_btm_color">#e5e5e5</item>
+        <item name="self_bg">#f0f0f0</item>
+        <item name="color_image">@drawable/self</item>
+        <item name="tk_bg">#f5f5f5</item>
+        <item name="dp_tv">#000000</item>
+        <item name="hq_top">#f4f4f4</item>
+        <item name="hq_gird_bg">#ffffff</item>
+        <item name="hq_tv_bg">#F2F2F2</item>
+        <item name="hq_ls_view">#F2F2F2</item>
+        <item name="zx_list_cl">#ffffff</item>
+        <item name="zx_bg">#ffffff</item>
+        <item name="zx_view">#ffffff</item>
+        <item name="img_btn">@drawable/jw_more</item>
+        <item name="hq_btn">@drawable/hq_more</item>
+        <item name="dp_btn">@drawable/dp_more</item>
+        <item name="rl_img">@drawable/data_main</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select</item>
+        <item name="bottom_button_0">@drawable/skin_tabbar_icon_flash_select_new</item>
+        <item name="bottom_button_1">@drawable/skin_tabbar_icon_jw_select_new</item>
+        <item name="bottom_button_2">@drawable/skin_tabbar_icon_hq_select_new</item>
+        <item name="bottom_button_3">@drawable/skin_tabbar_icon_data_select_new</item>
+        <item name="bottom_button_4">@drawable/skin_tabbar_icon_self_select_new</item>
+        <item name="bottom_linear_color">@drawable/botton_linear_selector</item>
+        <item name="sp_title">#f4f4f4</item>
+        <item name="rl_top_scroll_color">@drawable/rl_top_scroll_seletor</item>
+        <item name="rl_img_publishe">@drawable/cjrl_published</item>
+        <item name="rl_img_calendar">@drawable/cjrl_calendar</item>
+    </style>
+
+    <style name="BrowserThemeNewNight" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="flash_blow">#edf9ff</item>
+        <item name="flash_blow_bg">#04274c</item>
+        <item name="flash_bg">#ffffff</item>
+        <item name="flash_tv">#666666</item>
+        <item name="hq_tv">#116bcc</item>
+        <item name="sp_listview">#ebebeb</item>
+        <item name="rl_tv">#7B7B7B</item>
+        <item name="flash_top">#116bcc</item>
+        <!-- <item name="flash_top_image_cm">@drawable/comment</item> -->
+        <item name="yw_bg">#fafafa</item>
+        <item name="line_color">#e5e5e5</item>
+        <item name="line_btm_color">#e5e5e5</item>
+        <item name="self_bg">#f0f0f0</item>
+        <item name="color_image">@drawable/self</item>
+        <item name="tk_bg">#f5f5f5</item>
+        <item name="dp_tv">#000000</item>
+        <item name="hq_top">#043465</item>
+        <item name="hq_gird_bg">#ffffff</item>
+        <item name="hq_tv_bg">#F2F2F2</item>
+        <item name="hq_ls_view">#F2F2F2</item>
+        <item name="zx_list_cl">#ffffff</item>
+        <item name="zx_bg">#ffffff</item>
+        <item name="zx_view">#ffffff</item>
+        <item name="img_btn">@drawable/jw_more</item>
+        <item name="dp_btn">@drawable/neight_dpadd</item>
+        <item name="rl_img">@drawable/data_main</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select</item>
+        <item name="bottom_button_0">@drawable/skin_tabbar_icon_flash_select_new_night</item>
+        <item name="bottom_button_1">@drawable/skin_tabbar_icon_jw_select_new_night</item>
+        <item name="bottom_button_2">@drawable/skin_tabbar_icon_hq_select_new_night</item>
+        <item name="bottom_button_3">@drawable/skin_tabbar_icon_data_select_new_night</item>
+        <item name="bottom_button_4">@drawable/skin_tabbar_icon_self_select_new_night</item>
+        <item name="bottom_linear_color">@drawable/botton_linear_selector_night</item>
+        <item name="sp_title">#043465</item>
+        <item name="rl_top_scroll_color">@drawable/rl_top_scroll_seletor_night</item>
+        <item name="rl_img_publishe">@drawable/cjrl_published_night</item>
+        <item name="rl_img_calendar">@drawable/cjrl_calendar_night</item>
+    </style>
+
+    <!-- 元宵样式 -->
+
+    <style name="BrowserThemeYuanXiao" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="flash_blow">#edf9ff</item>
+        <item name="flash_blow_bg">#ffffff</item>
+        <item name="flash_bg">#ffffff</item>
+        <item name="flash_tv">#666666</item>
+        <item name="hq_tv">#116bcc</item>
+        <item name="sp_listview">#ebebeb</item>
+        <item name="rl_tv">#ffffff</item>
+        <item name="flash_top">#116bcc</item>
+        <!-- <item name="flash_top_image_cm">@drawable/comment</item> -->
+        <item name="yw_bg">#fafafa</item>
+        <item name="line_color">#e5e5e5</item>
+        <item name="line_btm_color">#e5e5e5</item>
+        <item name="self_bg">#f0f0f0</item>
+        <item name="color_image">@drawable/self</item>
+        <item name="tk_bg">#f5f5f5</item>
+        <item name="dp_tv">#000000</item>
+        <item name="hq_top">#f4f4f4</item>
+        <item name="hq_gird_bg">#ffffff</item>
+        <item name="hq_tv_bg">#F2F2F2</item>
+        <item name="hq_ls_view">#F2F2F2</item>
+        <item name="zx_list_cl">#ffffff</item>
+        <item name="zx_bg">#ffffff</item>
+        <item name="zx_view">#ffffff</item>
+        <item name="img_btn">@drawable/jw_more</item>
+        <item name="dp_btn">@drawable/dp_more</item>
+        <item name="rl_img">@drawable/data_main</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select</item>
+        <item name="bottom_button_0">@drawable/skin_tabbar_icon_flash_select_yx</item>
+        <item name="bottom_button_1">@drawable/skin_tabbar_icon_jw_select_yx</item>
+        <item name="bottom_button_2">@drawable/skin_tabbar_icon_hq_select_yx</item>
+        <item name="bottom_button_3">@drawable/skin_tabbar_icon_data_select_yx</item>
+        <item name="bottom_button_4">@drawable/skin_tabbar_icon_self_select_yx</item>
+        <item name="bottom_linear_color">@drawable/botton_linear_selector</item>
+        <item name="sp_title">#f4f4f4</item>
+        <item name="rl_top_scroll_color">@drawable/rl_top_scroll_seletor</item>
+        <item name="rl_img_publishe">@drawable/cjrl_published</item>
+        <item name="rl_img_calendar">@drawable/cjrl_calendar</item>
+    </style>
+
+    <style name="BrowserThemeYuanXiaoNight" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="flash_blow">#edf9ff</item>
+        <item name="flash_blow_bg">#04274c</item>
+        <item name="flash_bg">#ffffff</item>
+        <item name="flash_tv">#666666</item>
+        <item name="hq_tv">#116bcc</item>
+        <item name="sp_listview">#ebebeb</item>
+        <item name="rl_tv">#7B7B7B</item>
+        <item name="flash_top">#116bcc</item>
+        <!-- <item name="flash_top_image_cm">@drawable/comment</item> -->
+        <item name="yw_bg">#fafafa</item>
+        <item name="line_color">#e5e5e5</item>
+        <item name="line_btm_color">#e5e5e5</item>
+        <item name="self_bg">#f0f0f0</item>
+        <item name="color_image">@drawable/self</item>
+        <item name="tk_bg">#f5f5f5</item>
+        <item name="dp_tv">#000000</item>
+        <item name="hq_top">#043465</item>
+        <item name="hq_gird_bg">#ffffff</item>
+        <item name="hq_tv_bg">#F2F2F2</item>
+        <item name="hq_ls_view">#F2F2F2</item>
+        <item name="zx_list_cl">#ffffff</item>
+        <item name="zx_bg">#ffffff</item>
+        <item name="zx_view">#ffffff</item>
+        <item name="img_btn">@drawable/jw_more</item>
+        <item name="hq_btn">@drawable/hq_more</item>
+        <item name="dp_btn">@drawable/neight_dpadd</item>
+        <item name="rl_img">@drawable/data_main</item>
+        <item name="kxtcj_logo">@drawable/kxtcj_logo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="zx_main">@drawable/sc_st_select</item>
+        <item name="bottom_button_0">@drawable/skin_tabbar_icon_flash_select_yx</item>
+        <item name="bottom_button_1">@drawable/skin_tabbar_icon_jw_select_yx</item>
+        <item name="bottom_button_2">@drawable/skin_tabbar_icon_hq_select_yx</item>
+        <item name="bottom_button_3">@drawable/skin_tabbar_icon_data_select_yx</item>
+        <item name="bottom_button_4">@drawable/skin_tabbar_icon_self_select_yx</item>
+        <item name="bottom_linear_color">@drawable/botton_linear_selector_night</item>
+        <item name="sp_title">#043465</item>
+        <item name="rl_top_scroll_color">@drawable/rl_top_scroll_seletor_night</item>
+        <item name="rl_img_publishe">@drawable/cjrl_published_night</item>
+        <item name="rl_img_calendar">@drawable/cjrl_calendar_night</item>
+    </style>
+    <!-- 日历样式 -->
+    <style name="dateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    
+       <!-- popWindow动画style -->
+    <style name="mypopwindow_anim_style">
+
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/anim_popshow</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/anim_pophidden</item>
+    </style>
+
+</resources>

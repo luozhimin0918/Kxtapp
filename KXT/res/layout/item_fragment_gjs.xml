@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg">
+
+    <RelativeLayout
+        android:id="@+id/relative_yw_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ProgressBar
+            android:id="@+id/yw_pro_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_bg" />
+
+        <TextView
+            android:id="@+id/show_yw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yw_pro_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="数据加载中..." />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yw_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/flash_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_refresh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="数据加载失败,点击重新刷新" />
+    </RelativeLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/item_fragment_gjs_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/flash_bg"
+        android:cacheColorHint="?attr/flash_bg"
+        android:divider="#999999"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

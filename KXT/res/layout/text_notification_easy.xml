@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="1dip"
+            android:layout_height="10dip"
+            android:background="@android:color/darker_gray" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/calendar_item_img_state"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/ic_launcher"
+             />
+
+        
+
+        <TextView
+            android:layout_width="1dip"
+            android:layout_height="0dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+             android:visibility="invisible"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:paddingBottom="10dip" 
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/calendar_item_listview_version2_nfi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="30dip"
+            android:text="中国4月11日当周API原油库存中国4月11日当周API原油库存"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:layout_marginTop="2dp"/>
+        
+        <TextView
+            android:id="@+id/calendar_item_listview_version2_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="2dp"
+            android:text="中国4月11日当周API原油库存中国4月11日当周API原油库存"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        
+
+       
+
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview_rl_sj"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="?attr/flash_bg"
+        android:divider="#999999"
+        android:dividerHeight="@null"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

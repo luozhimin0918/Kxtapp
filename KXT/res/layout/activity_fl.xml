@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_blow_bg"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:id="@+id/fl_zt_color"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/flash_top"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分类"
+                android:layout_margin="8dp"
+                android:textColor="?attr/rl_tv"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/fl_yw_activity"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/out_tag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7f7f7f" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/fl_gr_ls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:listSelector="?attr/flash_bg"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="?attr/flash_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/zx_zt_color"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/flash_top"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/zx_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/return_tag" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/zx_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="?attr/rl_tv"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/zx_web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/zx_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/zx_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/hq_zx"
+                android:layout_width="59dp"
+                android:layout_height="18dp"
+                android:background="@drawable/hq_add" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <LinearLayout
+            android:id="@+id/zx_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/zx_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="18dp"
+                android:background="@drawable/hq_share" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

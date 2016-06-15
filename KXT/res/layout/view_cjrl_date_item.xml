@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/flash_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="?attr/line_color" />
+
+        <ImageView
+            android:id="@+id/img_cjrl_state"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_cjrl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:25"
+            android:textColor="#38a2f3"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="0dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:background="?attr/line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:background="?flash_blow"
+        android:orientation="vertical"
+        android:paddingBottom="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_nfi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:text="中国4月11日当周API原油库存中国4月11日当周API原油库存"
+                android:textColor="?attr/flash_tv"
+                android:textSize="@dimen/textSize" />
+
+            <ImageView
+                android:id="@+id/img_cjrl_nature"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar_item_listview_version2_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_item_listview_version2_nfi"
+            android:layout_marginLeft="9dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前值："
+                android:textColor="?attr/flash_tv"
+                android:textSize="@dimen/textSize_a" />
+
+            <TextView
+                android:id="@+id/text_cjrl_before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0%"
+                android:textColor="?attr/flash_tv"
+                android:textSize="@dimen/textSize_a" />
+
+            <TextView
+                android:id="@+id/text_cjrl_effect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="利多利空"
+                android:textColor="#444444"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="预测："
+                android:textColor="?attr/flash_tv"
+                android:textSize="@dimen/textSize_a" />
+
+            <TextView
+                android:id="@+id/text_cjrl_forecast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0%"
+                android:textColor="?attr/flash_tv"
+                android:textSize="@dimen/textSize_a" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="公布: "
+                android:textColor="#e14545"
+                android:textSize="@dimen/textSize_a" />
+
+            <TextView
+                android:id="@+id/text_cjrl_gongbu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+150"
+                android:textColor="#e14545"
+                android:textSize="@dimen/textSize_a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar_item_listview_version2_forecall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_cjrl_publish"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="11dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cjrl_publish"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_good_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linear_effectmid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cjrl_effectmid_bg_yellow_linearlayout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_cjrl_effectgood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/flash_bg"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="空"
+                        android:textColor="#fdb056"
+                        android:textSize="@dimen/textSize_b" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_effectgood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/cjrl_effectgood_bg_red_linearlayout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cjrl_effectgood_bg_red_left"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="利多"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/textSize_b" />
+
+                    <TextView
+                        android:id="@+id/text_cjrl_effectgood_good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/flash_bg"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="美元"
+                        android:textColor="#d04546"
+                        android:textSize="@dimen/textSize_b" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_effectbad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/cjrl_effectbad_bg_green_linearlayout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cjrl_effectbad_bg_green_left"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="利空"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/textSize_b" />
+
+                    <TextView
+                        android:id="@+id/text_cjrl_effectbad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/flash_bg"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="金银 石油 铜 镍"
+                        android:textColor="#a7d3a0"
+                        android:textSize="@dimen/textSize_b" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/linear_cjrl_published"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="22dp"
+                        android:background="?attr/rl_img_publishe"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_cjrl_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_cjrl_timer"
+                        android:layout_width="60dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cjrl_timer_default_shap"
+                        android:drawableLeft="@drawable/clock_blue"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="12:00"
+                        android:textColor="@color/cjrl_color_blue" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

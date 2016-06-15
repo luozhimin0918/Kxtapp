@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0099cc"
+        android:gravity="center_horizontal" >
+
+        <com.ylb.yncj.customtool.SegmentControl
+            xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hq_segment_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            segmentcontrol:colors="#FFFFFF"
+            segmentcontrol:cornerRadius="5dip"
+            segmentcontrol:direction="horizon"
+            segmentcontrol:horizonGap="30dip"
+            segmentcontrol:texts="行情|自选"
+            segmentcontrol:verticalGap="8dip" />
+    </LinearLayout>
+
+    <com.ylb.yncj.customtool.MyViewPager
+        android:id="@+id/hq_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.ylb.yncj.customtool.MyViewPager>
+
+</LinearLayout>

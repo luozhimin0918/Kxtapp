@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jyh.kxt"
+    android:versionCode="15"
+    android:versionName="4.9" >
+
+    <uses-sdk android:minSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- renren sso Permission for Unit Test -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <permission android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <application
+        android:name="com.jyh.kxt.socket.KXTApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jyh.kxt.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.TestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据 -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+                <data
+                    android:host="main"
+                    android:scheme="kxt" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据 -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+                <data
+                    android:host="video"
+                    android:scheme="kxt" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.TJActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.player.JCFullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.FlashLinkActiviy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.ShowWebImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.AdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.ZXActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据 -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+                <data
+                    android:host="chart"
+                    android:scheme="kxt" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.FlashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.GWActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.ClauseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.AdWebActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.DPWebActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据 -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+                <data
+                    android:host="news"
+                    android:scheme="kxt" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.NewSCActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.FKActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.LinkuserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.FLActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.AnimtionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.DataFLActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.CjInfoActicity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.DataFLWebActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.HQCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.ActivityZxInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyh.kxt.CjrlSelectTimeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.jyh.kxt.socket.RAIntentService" >
+        </service>
+        <service android:name="com.jyh.kxt.socket.TopRAIntentService" >
+        </service>
+        <service android:name="com.jyh.kxt.socket.KXTSocketService" >
+            <intent-filter android:priority="1000" >
+                <action android:name="KXTSocketService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.jyh.kxt.socket.TestTZIntentService"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.jyh.kxt.socket.KXTSocketTZService"
+            android:exported="true" >
+        </service>
+        <!-- 监听网络状态的广播 -->
+        <receiver
+            android:name="com.jyh.kxt.socket.ConnectionChangeReceiver"
+            android:exported="true"
+            android:label="NetworkConnection"
+            android:priority="2147483647" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.jyh.kxt.socket.MyBroadcastReceiver"
+            android:exported="true"
+            android:priority="2147483647" >
+            <intent-filter android:priority="1000" >
+                <action android:name="MyBroadcastReceiver" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="537c3e0456240b761700cd92" >
+        </meta-data>
+
+        <!-- *************************    分享相关的注册 START **************************** -->
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101487761" />
+                <!-- <data android:scheme="tencent100424468" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- *************************    分享相关的注册 END **************************** -->
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+        <uses-library android:name="android.test.runner" />
+
+        <receiver android:name="com.jyh.kxt.socket.NotifyReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="NotifyReceiver" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

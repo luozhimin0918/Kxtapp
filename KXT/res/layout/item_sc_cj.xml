@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/flash_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/sc_yw_lin"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="?attr/line_color"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/check_sc"
+            style="@style/CustomDeleteboxTheme"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="0dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:background="?attr/line_color"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:background="?flash_blow"
+            android:paddingBottom="10dip" >
+
+            <TextView
+                android:id="@+id/calendar_item_listview_version2_nfi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="9dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="10dip"
+                android:text="中国4月11日当周API原油库存中国4月11日当周API原油库存"
+                android:textColor="?attr/flash_tv"
+                android:textSize="@dimen/textSize" />
+
+            <ImageView
+                android:id="@+id/calendar_item_nature"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dip"
+                android:layout_marginTop="10dip"
+                android:layout_toLeftOf="@id/calendar_item_listview_version2_nfi"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/calendar_item_listview_version2_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_item_listview_version2_nfi"
+                android:layout_marginLeft="9dip"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="@dimen/textSize_a" />
+
+                <TextView
+                    android:id="@+id/calendar_item_listview_version2_before"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0%"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/textSize_a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/calendar_item_listview_version2_gongbu_parent_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/calendar_item_listview_version2_nfi"
+                android:layout_marginLeft="80dip"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公布: "
+                    android:textColor="#e14545"
+                    android:textSize="@dimen/textSize_a" />
+
+                <TextView
+                    android:id="@+id/calendar_item_listview_version2_gongbu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+150"
+                    android:textColor="#e14545"
+                    android:textSize="@dimen/textSize_a" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/calendar_item_img_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/calendar_item_nature"
+                android:layout_alignTop="@+id/calendar_item_listview_version2_gongbu_parent_ll"
+                android:layout_below="@+id/calendar_item_nature"
+                android:scaleType="fitXY"
+                android:src="@drawable/state_brazil" />
+
+            <LinearLayout
+                android:id="@+id/calendar_item_listview_version2_forecall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_item_listview_version2_ll"
+                android:layout_marginLeft="9dip"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="@dimen/textSize_a" />
+
+                <TextView
+                    android:id="@+id/calendar_item_listview_version2_forecast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0%"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/textSize_a" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/calendar_item_listview_version2_4main_effect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/calendar_item_listview_version2_gongbu_parent_ll"
+                android:layout_below="@id/calendar_item_listview_version2_gongbu_parent_ll"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@id/calendar_item_listview_version2_forecall"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="利多利空"
+                android:textColor="#444444"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/main_cjrl_item_listview_v2_good_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/calendar_item_listview_version2_gongbu_parent_ll"
+                android:layout_below="@id/calendar_item_listview_version2_gongbu_parent_ll"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@id/calendar_item_listview_version2_forecall"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/main_cjrl_item_ll_effectmid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cjrl_effectmid_bg_yellow_linearlayout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/main_cjrl_item_listview_v2_effectgood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/flash_bg"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="空"
+                        android:textColor="#fdb056"
+                        android:textSize="@dimen/textSize_b" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_cjrl_item_ll_effectgood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/cjrl_effectgood_bg_red_linearlayout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cjrl_effectgood_bg_red_left"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="利多"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/textSize_b" />
+
+                    <TextView
+                        android:id="@+id/main_cjrl_item_listview_v2_effectgood_good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/flash_bg"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="美元"
+                        android:textColor="#d04546"
+                        android:textSize="@dimen/textSize_b" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_cjrl_item_ll_effectbad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/cjrl_effectbad_bg_green_linearlayout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cjrl_effectbad_bg_green_left"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="利空"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/textSize_b" />
+
+                    <TextView
+                        android:id="@+id/main_cjrl_item_listview_v2_effectbad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/flash_bg"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:text="金银 石油 铜 镍"
+                        android:textColor="#a7d3a0"
+                        android:textSize="@dimen/textSize_b" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp" >
+
+            <TextView
+                android:id="@+id/calendar_listview_item_tv_title_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="2015-6-6 18:15"
+                android:textColor="#999999"
+                android:textSize="@dimen/textSize_b" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:color="@color/rl_top_scroll_color_select_night"/>
+    <item android:state_selected="false" android:color="@color/rl_top_scroll_color_default_night"/>
+
+</selector>

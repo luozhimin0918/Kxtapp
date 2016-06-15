@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/flash_bg"
+    android:measureWithLargestChild="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/line_color" />
+
+        <TextView
+            android:id="@+id/lv_item_time4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:25"
+            android:textColor="#38a2f3"
+            android:textSize="@dimen/textSize_a" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="0dip"
+            android:layout_marginTop="1dip"
+            android:layout_weight="1"
+            android:background="?attr/line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flash_click4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:background="?attr/flash_blow"
+        android:orientation="vertical" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/live_img4"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/lv_item_brief4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/live_img4"
+            android:layout_margin="8dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="5dip"
+            android:text="中国4月11日当周API原油库存"
+            android:textColor="?attr/flash_tv"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+</LinearLayout>

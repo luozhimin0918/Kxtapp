@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_flash_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="?attr/flash_top"
+        android:gravity="center"
+        android:padding="2px" >
+
+        <com.jyh.kxt.customtool.SegmentView
+            android:id="@+id/segment_flash"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>
